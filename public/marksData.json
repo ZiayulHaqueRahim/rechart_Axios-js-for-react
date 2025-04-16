@@ -1,8 +1,4 @@
-import React from 'react';
-import { Line, LineChart, XAxis, YAxis } from 'recharts';
-
-
-const resultData = [
+ [
     {
       "student": 1,
       "physics": 78,
@@ -66,24 +62,3 @@ const resultData = [
   ]
   
 
-
-
-
-const ResultChart = () => {
-    return (
-        <div>
-             <h1 className='text-5xl  px-5 py-14' >Using Rechart  Loading data:</h1>
-            <LineChart width={500} height={500} data={resultData}>
-                <XAxis dataKey="student" />
-                <YAxis/>
-                <Line  dataKey="math" stroke='red' />
-                <Line  dataKey="physics" stroke='blue' />
-                <Line  dataKey="chemistry" stroke='orange' />
-                
-               
-            </LineChart>
-        </div>
-    );
-};
-
-export default ResultChart;
